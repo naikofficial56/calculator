@@ -14,7 +14,9 @@ jobs:
           command: echo ${CIRCLE_BRANCH}
       - run:
           name: " check the test"
-          command: ls -a
+          command: |
+            cd package
+            go test
 
 workflows:
   build_and_test:
