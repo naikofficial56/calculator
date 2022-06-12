@@ -20,7 +20,7 @@ func TestSum(t *testing.T) {
 			name:     "incorrect output",
 			input1:   5,
 			input2:   11,
-			expected: 17,
+			expected: 35,
 		},
 	}
 
