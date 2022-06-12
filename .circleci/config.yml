@@ -15,6 +15,7 @@ jobs:
       - run:
           name: " check the test"
           command: |
+            go mod tidy
             cd package
             go test
 
